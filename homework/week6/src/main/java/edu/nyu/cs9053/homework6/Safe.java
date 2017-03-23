@@ -1,0 +1,18 @@
+package edu.nyu.cs9053.homework6;
+
+/**
+ * User: blangel
+ */
+public @interface Safe {
+
+    static final long INVALID = 0L;
+
+    /***
+     * @return the deposit-safe's password
+     */
+    long password() default INVALID;
+    public  boolean getTools();
+   
+    public boolean cashIn();
+    
+}
